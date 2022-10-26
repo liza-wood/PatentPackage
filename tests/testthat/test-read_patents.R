@@ -7,5 +7,3 @@ test_that("patent reading works", {
   expect_known_output(patents, "scratch/patents.csv")
 })
 
-# Then connect this to a github action
-use_github_actions_badge("check-release")

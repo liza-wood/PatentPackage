@@ -27,6 +27,12 @@ test_that("addition works", {
 
 # So let's use this on a package
 library(usethis)
-#use_mit_license()
+use_mit_license()
 #creates a test script -- screates a generic test template
 use_test("read_patents")
+
+
+# Then connect this to a github action to make badges
+use_github_action("check-release")
+use_github_actions_badge("check-release")
+?use_github_actions_badge
